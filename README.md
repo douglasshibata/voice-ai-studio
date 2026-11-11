@@ -104,4 +104,3 @@ PYTHONPATH=backend python3 -m unittest discover -s tests -p "test_*.py"
 - **Privacidade Soberana:** Por padrão, nenhum arquivo de áudio ou texto sintetizado é enviado para servidores externos.
 - **Matriz de Licenças:** Documentação completa das licenças de software e pesos dos modelos (MIT, Apache 2.0, MPL 2.0) disponível em `docs/licenses.md`.
 - **Consentimento em Clonagem de Voz:** Exige confirmação explícita de autorização registrada no banco de dados local (`UserConsent`).
-# voice-ai-studio

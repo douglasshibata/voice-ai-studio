@@ -1,0 +1,18 @@
+services:
+  voice-ai-studio:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "3900:3900"
+    environment:
+      - APP_ENV=production
+      - API_HOST=0.0.0.0
+      - API_PORT=3900
+      - CUDA_ENABLED=true
+    volumes:
+      - studio_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  studio_data:
